@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="game-card">
+        <h1>Tic-Tac-Toe</h1>
+        <p class="subtitle">A calm blue-and-purple challenge with a gentle soundtrack.</p>
+
+        <div class="scoreboard" aria-label="scoreboard">
+          <div class="score-box">
+            <span class="player-label">X</span>
+            <span id="score-x">0</span>
+          </div>
+          <div class="score-box">
+            <span class="player-label">O</span>
+            <span id="score-o">0</span>
+          </div>
+        </div>
+
+        <div class="board-wrapper">
+          <div class="board" id="board">
+            <div class="strike" id="strike"></div>
+            <button class="cell" data-index="0" aria-label="cell 1"></button>
+            <button class="cell" data-index="1" aria-label="cell 2"></button>
+            <button class="cell" data-index="2" aria-label="cell 3"></button>
+            <button class="cell" data-index="3" aria-label="cell 4"></button>
+            <button class="cell" data-index="4" aria-label="cell 5"></button>
+            <button class="cell" data-index="5" aria-label="cell 6"></button>
+            <button class="cell" data-index="6" aria-label="cell 7"></button>
+            <button class="cell" data-index="7" aria-label="cell 8"></button>
+            <button class="cell" data-index="8" aria-label="cell 9"></button>
+          </div>
+        </div>
+
+        <p class="status" id="status">Player X starts.</p>
+        <button class="restart-btn" id="restart-btn">Restart Game</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
